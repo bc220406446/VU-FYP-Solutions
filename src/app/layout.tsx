@@ -1,5 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins, Roboto, JetBrains_Mono } from "next/font/google";
+import { TopAnnouncementBar } from "@/components/layout/top-announcement-bar";
+import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
 import { siteConfig } from "@/config/site";
 import "./globals.css";
 
@@ -36,19 +39,19 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | FYP Projects, Services & Student Resources`,
-    template: `%s | ${siteConfig.name}`,
+    default: "VU FYP Solutions | CS619 & CS519 Final Year Project Support",
+    template: "%s | VU FYP Solutions",
   },
-  description: siteConfig.description,
+  description:
+    "Complete Final Year Project solutions for Virtual University CS619 & CS519 students. Documentation, implementation, and viva preparation.",
   keywords: [
-    "DeveloperBano",
-    "Final Year Projects",
-    "FYP Resources",
-    "Student Project Development",
     "VU FYP Solutions",
-    "Web Development",
-    "Machine Learning",
-    "Mobile Applications",
+    "DeveloperBano",
+    "CS619 FYP",
+    "CS519 FYP",
+    "Virtual University Final Year Project",
+    "VU Documentation",
+    "SRS Design Viva",
   ],
   authors: [{ name: siteConfig.name, url: siteConfig.url }],
   creator: siteConfig.name,
@@ -56,14 +59,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteConfig.url,
-    title: siteConfig.name,
-    description: siteConfig.description,
+    title: "VU FYP Solutions | CS619 & CS519 Final Year Project Support",
+    description:
+      "Complete Final Year Project solutions for Virtual University CS619 & CS519 students.",
     siteName: siteConfig.name,
   },
   twitter: {
     card: "summary_large_image",
-    title: siteConfig.name,
-    description: siteConfig.description,
+    title: "VU FYP Solutions",
+    description:
+      "Complete Final Year Project solutions for Virtual University CS619 & CS519 students.",
   },
   robots: {
     index: true,
@@ -81,8 +86,11 @@ export default function RootLayout({
       lang="en"
       className={`${poppins.variable} ${roboto.variable} ${jetbrainsMono.variable} antialiased`}
     >
-      <body className="min-h-screen bg-background font-sans text-foreground selection:bg-[#0F969C] selection:text-white">
-        {children}
+      <body className="min-h-screen flex flex-col bg-background font-sans text-foreground selection:bg-brand-primaryTeal selection:text-white">
+        <TopAnnouncementBar />
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );
