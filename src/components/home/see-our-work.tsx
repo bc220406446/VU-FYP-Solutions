@@ -26,7 +26,7 @@ const recentProjects: ProjectItem[] = [
   },
   {
     id: "smart-query-management",
-    title: "Student Management System",
+    title: "Query Management System",
     category: "Academic Query Portal",
     image: "/images/projects/smart-query-management.webp",
   },

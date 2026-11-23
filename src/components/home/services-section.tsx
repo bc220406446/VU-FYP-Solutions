@@ -24,8 +24,11 @@ export function ServicesSection() {
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
       {/* Section Header */}
       <div className="text-center max-w-2xl mx-auto space-y-3 mb-12">
+        <p className="text-sm sm:text-base text-neutral-slateText font-sans">
+          Unable to Handle Your Project at the moment? We've got you covered.
+        </p>
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-brand-deepInk tracking-tight">
-          Our <span className="text-brand-deepTeal">Services</span>
+          Get Our <span className="text-brand-deepTeal">Services</span>
         </h2>
         <p className="text-sm sm:text-base text-neutral-slateText font-sans">
           Choose a complete project package or explore individual services as per your need.
@@ -139,7 +142,7 @@ export function ServicesSection() {
                 </span>
                 <span>Final Deliverable</span>
               </li>
-                            <li className="flex items-start gap-2.5">
+              <li className="flex items-start gap-2.5">
                 <span className="text-emerald-600 mt-0.5 shrink-0">
                   <AppIcon icon={Tick02Icon} size={18} strokeWidth={2.2} />
                 </span>

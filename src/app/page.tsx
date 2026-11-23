@@ -23,18 +23,18 @@ export default async function HomePage() {
 
       {/* 3. Four-point Trust & Reliability Bar */}
       <TrustBar />
+      
+      {/* 6. Easy Projects Ranking Guide */}
+      <EasyProjectsRanking />
+
+      {/* 7. Build On Your Own Pathway (Directs to Blog & Guidelines) */}
+      <BuildOnYourOwnSection />
 
       {/* 4. Complete Services & Pricing Packages (CS519, CS619, Individual) */}
       <ServicesSection />
 
       {/* 5. See Our Work Section (Real Projects from devkamran.me) */}
       <SeeOurWorkSection />
-
-      {/* 6. Easy Projects Ranking Guide */}
-      <EasyProjectsRanking />
-
-      {/* 7. Build On Your Own Pathway (Directs to Blog & Guidelines) */}
-      <BuildOnYourOwnSection />
 
       {/* 8. Secondary Resource Cards (Supervisor Reviews & Helping Material) */}
       <ResourceCards />
