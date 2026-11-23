@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
+  BashIcon,
   Mortarboard02Icon,
   Moon02Icon,
   Menu01Icon,
@@ -32,7 +33,7 @@ export function Navbar() {
         {/* Brand Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
           <div className="h-9 w-9 rounded-lg bg-brand-deepTeal text-white flex items-center justify-center shadow-sm group-hover:bg-brand-primaryTeal transition-colors">
-            <AppIcon icon={Mortarboard02Icon} size={22} strokeWidth={2} />
+            <AppIcon icon={BashIcon} size={22} strokeWidth={2} />
           </div>
           <div className="flex flex-col">
             <span className="font-heading font-bold text-lg leading-tight text-brand-deepInk tracking-tight flex items-center gap-1">
@@ -52,7 +53,7 @@ export function Navbar() {
                 className={cn(
                   "px-3.5 py-1.5 rounded-full text-sm font-sans font-medium transition-all duration-150",
                   isActive
-                    ? "bg-brand-deepTeal text-white shadow-xs"
+                    ? "bg-brand-deepTeal text-white shadow-xs font-semibold"
                     : "text-neutral-slateText hover:text-brand-deepInk hover:bg-neutral-warmWhite"
                 )}
               >

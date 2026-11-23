@@ -37,19 +37,13 @@ export function ServicesSection() {
         {/* Card 1: CS519 */}
         <div className="rounded-xl border border-border bg-white p-7 shadow-card flex flex-col justify-between hover:border-brand-primaryTeal/50 transition-all duration-200">
           <div className="space-y-6">
-            <div className="flex items-center justify-between">
-              <div className="h-12 w-12 rounded-lg bg-brand-deepTeal/10 text-brand-deepTeal flex items-center justify-center">
-                <AppIcon icon={File01Icon} size={24} strokeWidth={1.8} />
-              </div>
-              <span className="px-3 py-1 rounded-full text-xs font-semibold font-mono bg-[#FEF3C7] text-[#B45309] border border-[#FDE68A]">
-                CS519
-              </span>
-            </div>
-
-            <div>
+            <div className="flex items-center justify-between gap-4">
               <h3 className="text-xl font-bold font-heading text-brand-deepInk">
                 Complete CS519 Project Handling
               </h3>
+            </div>
+
+            <div>
               <div className="mt-3 flex items-baseline gap-1">
                 <span className="text-2xl sm:text-3xl font-bold font-heading text-[#B45309]">
                   Rs. 20,000
@@ -62,13 +56,25 @@ export function ServicesSection() {
                 <span className="text-emerald-600 mt-0.5 shrink-0">
                   <AppIcon icon={Tick02Icon} size={18} strokeWidth={2.2} />
                 </span>
-                <span>Documentation (Rs. 5,000)</span>
+                <span>Documentation</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="text-emerald-600 mt-0.5 shrink-0">
                   <AppIcon icon={Tick02Icon} size={18} strokeWidth={2.2} />
                 </span>
-                <span>Final Deliverable (Rs. 15,000)</span>
+                <span>Final Deliverable</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-emerald-600 mt-0.5 shrink-0">
+                  <AppIcon icon={Tick02Icon} size={18} strokeWidth={2.2} />
+                </span>
+                <span>Code Setup on Your Machine</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-emerald-600 mt-0.5 shrink-0">
+                  <AppIcon icon={Tick02Icon} size={18} strokeWidth={2.2} />
+                </span>
+                <span>Viva Preparation</span>
               </li>
             </ul>
           </div>
@@ -94,19 +100,13 @@ export function ServicesSection() {
           </div>
 
           <div className="space-y-6">
-            <div className="flex items-center justify-between">
-              <div className="h-12 w-12 rounded-lg bg-brand-deepTeal/10 text-brand-deepTeal flex items-center justify-center">
-                <AppIcon icon={Layers01Icon} size={24} strokeWidth={1.8} />
-              </div>
-              <span className="px-3 py-1 rounded-full text-xs font-semibold font-mono bg-[#FEF3C7] text-[#B45309] border border-[#FDE68A]">
-                CS619
-              </span>
-            </div>
-
-            <div>
+            <div className="flex items-center justify-between gap-4">
               <h3 className="text-xl font-bold font-heading text-brand-deepInk">
                 Complete CS619 Project Handling
               </h3>
+            </div>
+
+            <div>
               <div className="mt-3 flex items-baseline gap-1">
                 <span className="text-2xl sm:text-3xl font-bold font-heading text-[#B45309]">
                   Rs. 30,000
@@ -119,25 +119,37 @@ export function ServicesSection() {
                 <span className="text-emerald-600 mt-0.5 shrink-0">
                   <AppIcon icon={Tick02Icon} size={18} strokeWidth={2.2} />
                 </span>
-                <span>SRS Document (Rs. 5,000)</span>
+                <span>SRS Document</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="text-emerald-600 mt-0.5 shrink-0">
                   <AppIcon icon={Tick02Icon} size={18} strokeWidth={2.2} />
                 </span>
-                <span>Design Document (Rs. 5,000)</span>
+                <span>Design Document</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="text-emerald-600 mt-0.5 shrink-0">
                   <AppIcon icon={Tick02Icon} size={18} strokeWidth={2.2} />
                 </span>
-                <span>Prototype Phase (Rs. 5,000)</span>
+                <span>Prototype Phase</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="text-emerald-600 mt-0.5 shrink-0">
                   <AppIcon icon={Tick02Icon} size={18} strokeWidth={2.2} />
                 </span>
-                <span>Final Deliverable (Rs. 15,000)</span>
+                <span>Final Deliverable</span>
+              </li>
+                            <li className="flex items-start gap-2.5">
+                <span className="text-emerald-600 mt-0.5 shrink-0">
+                  <AppIcon icon={Tick02Icon} size={18} strokeWidth={2.2} />
+                </span>
+                <span>Code Setup on Your Machine</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-emerald-600 mt-0.5 shrink-0">
+                  <AppIcon icon={Tick02Icon} size={18} strokeWidth={2.2} />
+                </span>
+                <span>Viva Preparation</span>
               </li>
             </ul>
           </div>
@@ -159,31 +171,19 @@ export function ServicesSection() {
         {/* Card 3: Individual Services */}
         <div className="rounded-xl border border-border bg-white p-7 shadow-card flex flex-col justify-between hover:border-brand-primaryTeal/50 transition-all duration-200">
           <div className="space-y-6">
-            <div className="flex items-center justify-between">
-              <div className="h-12 w-12 rounded-lg bg-brand-deepTeal/10 text-brand-deepTeal flex items-center justify-center">
-                <AppIcon icon={Grid02Icon} size={24} strokeWidth={1.8} />
-              </div>
-              <span className="px-3 py-1 rounded-full text-xs font-semibold font-sans bg-[#FEF3C7] text-[#B45309] border border-[#FDE68A]">
-                Individual
-              </span>
+            <div className="flex items-center justify-between gap-4">
+              <h3 className="text-xl font-bold font-heading text-brand-deepInk">
+                Specific Phase Assignment Solution
+              </h3>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold font-heading text-brand-deepInk">
-                Assignments & Other Services
-              </h3>
               <p className="mt-2 text-xs sm:text-sm text-neutral-slateText font-sans leading-relaxed">
-                Need a specific assignment, document or development phase? Explore our individually available services.
+                Need a specific phase assignment solution? Explore our individually available services.
               </p>
             </div>
 
             <ul className="space-y-3 border-t border-border pt-5 text-sm text-neutral-slateText font-sans">
-              <li className="flex items-start gap-2.5">
-                <span className="text-emerald-600 mt-0.5 shrink-0">
-                  <AppIcon icon={Tick02Icon} size={18} strokeWidth={2.2} />
-                </span>
-                <span>Individual assignments</span>
-              </li>
               <li className="flex items-start gap-2.5">
                 <span className="text-emerald-600 mt-0.5 shrink-0">
                   <AppIcon icon={Tick02Icon} size={18} strokeWidth={2.2} />
@@ -200,7 +200,13 @@ export function ServicesSection() {
                 <span className="text-emerald-600 mt-0.5 shrink-0">
                   <AppIcon icon={Tick02Icon} size={18} strokeWidth={2.2} />
                 </span>
-                <span>Other project-related services</span>
+                <span>Final Delieverable Solution</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-emerald-600 mt-0.5 shrink-0">
+                  <AppIcon icon={Tick02Icon} size={18} strokeWidth={2.2} />
+                </span>
+                <span>Viva Preparation</span>
               </li>
             </ul>
           </div>

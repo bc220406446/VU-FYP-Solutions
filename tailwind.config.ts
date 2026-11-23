@@ -28,16 +28,20 @@ const config: Config = {
     },
     extend: {
       colors: {
-        // Design System - Primary Brand Colors
+        // Design System - Official Palette (#06141B, #11212D, #253745, #4A5C6A, #9BA8AB, #CCD0CE) + Teal Brand Accents
         brand: {
           deepInk: "#06141B",
           darkNavy: "#11212D",
           slate: "#253745",
+          slateText: "#4A5C6A",
+          mutedGrey: "#9BA8AB",
+          lightGrey: "#CCD0CE",
           deepTeal: "#0C7075",
           primaryTeal: "#0F969C",
           softBlue: "#6DA5C0",
+          warmWhite: "#F5F6F3",
         },
-        // Design System - Neutrals
+        // Neutrals
         neutral: {
           warmWhite: "#F5F6F3",
           white: "#FFFFFF",
@@ -46,7 +50,12 @@ const config: Config = {
           slateText: "#4A5C6A",
           border: "#DCE2E1",
         },
-        // Design System - Semantics
+        // Accents & Semantics
+        accent: {
+          amber: "#D97706",
+          amberLight: "#FEF3C7",
+          amberText: "#B45309",
+        },
         semantic: {
           success: "#237A57",
           warning: "#B7791F",
@@ -75,10 +84,6 @@ const config: Config = {
         muted: {
           DEFAULT: "var(--muted)",
           foreground: "var(--muted-foreground)",
-        },
-        accent: {
-          DEFAULT: "var(--accent)",
-          foreground: "var(--accent-foreground)",
         },
         destructive: {
           DEFAULT: "var(--destructive)",

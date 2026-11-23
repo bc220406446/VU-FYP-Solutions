@@ -17,7 +17,7 @@ export function TopAnnouncementBar() {
             <AppIcon icon={Megaphone01Icon} size={14} strokeWidth={2} />
           </span>
           <span className="font-sans font-medium text-neutral-lightGrey">
-            <strong className="text-white font-semibold">VU CS619 & CS519 FYP Projects</strong> – Development, Documentation & Viva Preparation
+            <strong className="text-white font-semibold">VU CS619 & CS519 FYP Projects:</strong> Complete Project Development including Viva Preparation
           </span>
         </div>
 
@@ -25,10 +25,10 @@ export function TopAnnouncementBar() {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-[#D97706] hover:bg-[#B45309] text-white font-sans font-semibold text-xs tracking-wide transition-colors shrink-0 shadow-sm"
+          className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-[#EAB308] hover:bg-[#CA8A04] text-black font-sans font-semibold text-xs tracking-wide transition-colors shrink-0 shadow-xs"
         >
           <span>Book Your Project</span>
-          <AppIcon icon={ArrowRight01Icon} size={14} strokeWidth={2.2} />
+          <AppIcon icon={ArrowRight01Icon} size={14} strokeWidth={2.4} />
         </Link>
       </div>
     </div>

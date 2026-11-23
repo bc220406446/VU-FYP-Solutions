@@ -100,34 +100,6 @@ export function Footer() {
                 </li>
               </ul>
             </div>
-
-            <div className="space-y-3">
-              <h4 className="text-xs font-heading font-bold uppercase tracking-wider text-brand-deepInk">
-                Contact
-              </h4>
-              <ul className="space-y-2 text-sm font-sans text-neutral-slateText">
-                <li>
-                  <Link
-                    href={whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 hover:text-brand-deepTeal transition-colors"
-                  >
-                    <AppIcon icon={WhatsappIcon} size={16} className="text-emerald-600" />
-                    <span>WhatsApp Enquiry</span>
-                  </Link>
-                </li>
-                <li>
-                  <a
-                    href="mailto:contact@vufypsolutions.com"
-                    className="inline-flex items-center gap-1.5 hover:text-brand-deepTeal transition-colors"
-                  >
-                    <AppIcon icon={Mail01Icon} size={16} className="text-brand-deepTeal" />
-                    <span>contact@vufypsolutions.com</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
