@@ -9,6 +9,7 @@ interface ProjectItem {
   title: string;
   category: string;
   image: string;
+  link: string;
 }
 
 const recentProjects: ProjectItem[] = [
@@ -17,18 +18,21 @@ const recentProjects: ProjectItem[] = [
     title: "Sovereign E-Commerce Store",
     category: "Full-Stack Web App",
     image: "/images/projects/sovereign-store.webp",
+    link: "/projects",
   },
   {
     id: "graze-smasher",
     title: "Graze Smasher",
     category: "Machine Learning & NLP",
     image: "/images/projects/graze-smasher.webp",
+    link: "/projects",
   },
   {
     id: "smart-query-management",
     title: "Query Management System",
     category: "Academic Query Portal",
     image: "/images/projects/smart-query-management.webp",
+    link: "/projects",
   },
 ];
 
@@ -58,9 +62,10 @@ export function SeeOurWorkSection() {
         {/* Right Columns: 3 Real Project Demonstration Cards */}
         <div className="lg:col-span-9 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
           {recentProjects.map((project) => (
-            <div
+            <Link
               key={project.id}
-              className="group rounded-xl border border-border bg-white overflow-hidden shadow-subtle hover:border-brand-deepTeal/50 transition-colors flex flex-col"
+              href={project.link}
+              className="group rounded-xl border border-border bg-white overflow-hidden shadow-subtle hover:border-brand-deepTeal/50 transition-colors flex flex-col block"
             >
               {/* Real Project Image from devkamran.me */}
               <div className="relative h-44 w-full bg-brand-darkNavy overflow-hidden">
@@ -85,7 +90,7 @@ export function SeeOurWorkSection() {
                   {project.title}
                 </h3>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

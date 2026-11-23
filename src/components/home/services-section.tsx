@@ -24,9 +24,9 @@ export function ServicesSection() {
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
       {/* Section Header */}
       <div className="text-center max-w-2xl mx-auto space-y-3 mb-12">
-        <p className="text-sm sm:text-base text-neutral-slateText font-sans">
-          Unable to Handle Your Project at the moment? We've got you covered.
-        </p>
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-deepTeal/10 text-brand-deepTeal text-xs font-semibold font-sans">
+          <span>Unable to Handle Your Project at the moment? We've got you covered.</span>
+        </div>
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-brand-deepInk tracking-tight">
           Get Our <span className="text-brand-deepTeal">Services</span>
         </h2>
@@ -55,6 +55,9 @@ export function ServicesSection() {
             </div>
 
             <ul className="space-y-3 border-t border-border pt-5 text-sm text-neutral-slateText font-sans">
+              <li className="flex items-start gap-2.5">
+                <b>Package Includes</b>
+              </li>
               <li className="flex items-start gap-2.5">
                 <span className="text-emerald-600 mt-0.5 shrink-0">
                   <AppIcon icon={Tick02Icon} size={18} strokeWidth={2.2} />
@@ -118,6 +121,9 @@ export function ServicesSection() {
             </div>
 
             <ul className="space-y-3 border-t border-border pt-5 text-sm text-neutral-slateText font-sans">
+              <li className="flex items-start gap-2.5">
+                <b>Package Includes</b>
+              </li>
               <li className="flex items-start gap-2.5">
                 <span className="text-emerald-600 mt-0.5 shrink-0">
                   <AppIcon icon={Tick02Icon} size={18} strokeWidth={2.2} />
@@ -187,6 +193,9 @@ export function ServicesSection() {
             </div>
 
             <ul className="space-y-3 border-t border-border pt-5 text-sm text-neutral-slateText font-sans">
+              <li className="flex items-start gap-2.5">
+                <b>Individual Service Covers</b>
+              </li>
               <li className="flex items-start gap-2.5">
                 <span className="text-emerald-600 mt-0.5 shrink-0">
                   <AppIcon icon={Tick02Icon} size={18} strokeWidth={2.2} />

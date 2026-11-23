@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import {
-  Book02Icon,
-  SourceCodeIcon,
   File01Icon,
+  Layers01Icon,
+  SourceCodeIcon,
   ComputerIcon,
+  Book02Icon,
   ArrowRight01Icon,
 } from "@hugeicons/core-free-icons";
 import { AppIcon } from "@/components/shared/icon";
@@ -13,23 +14,27 @@ export function BuildOnYourOwnSection() {
   const guideTopics = [
     {
       icon: File01Icon,
-      title: "SRS & IEEE Documentation Guidelines",
-      desc: "Step-by-step templates for functional requirements, use cases, ER diagrams, and sequence flows.",
+      title: "SRS Guidelines",
+      desc: "Learn to define project scope, write functional and non-functional requirements, create use case diagrams and usage scenarios, select a development methodology, and prepare a Gantt chart.",
+      link: "/blogs",
+    },
+    {
+      icon: Layers01Icon,
+      title: "Design Document Guidelines",
+      desc: "Learn to design system architecture, create database schemas, ER diagrams, class diagrams, sequence diagrams, UI wireframes and write Test Cases.",
+      link: "/blogs",
     },
     {
       icon: SourceCodeIcon,
-      title: "Clean Architecture & Database Schemas",
-      desc: "Best practices for writing modular backend logic and designing 3NF normalized databases.",
+      title: "Prototype Development",
+      desc: "Learn to set up a working prototype, connect databases, implement essential features, and demonstrate core functionalities for supervisor review.",
+      link: "/blogs",
     },
     {
       icon: ComputerIcon,
-      title: "Real Viva Defense Questions & Answers",
-      desc: "Curated questions asked by VU supervisors during Mid-Term and Final Viva presentations.",
-    },
-    {
-      icon: Book02Icon,
-      title: "Phase-by-Phase Submission Checklists",
-      desc: "Avoid common rejections with supervisor-tested checklists before uploading to VULMS.",
+      title: "Final Deliverable Development",
+      desc: "Learn to complete source code, deploy your application, write documentation, prepare presentation slides, and confidently defend your project in the final viva.",
+      link: "/blogs",
     },
   ];
 
@@ -67,7 +72,7 @@ export function BuildOnYourOwnSection() {
             </div>
           </div>
 
-          {/* Right Cards Column: 4 Guides */}
+          {/* Right Cards Column: 4 Milestone Guides */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {guideTopics.map((topic, idx) => (
               <div
@@ -89,7 +94,7 @@ export function BuildOnYourOwnSection() {
 
                 <div className="pt-1">
                   <Link
-                    href="/blogs"
+                    href={topic.link}
                     className="inline-flex items-center gap-1 text-xs font-semibold text-brand-deepTeal hover:underline"
                   >
                     <span>Read Guide</span>
