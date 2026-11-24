@@ -43,7 +43,7 @@ export function BundleOfferBanner() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-brand-deepTeal hover:bg-[#095E63] text-white font-sans font-medium text-sm transition-colors shadow-xs w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-brand-deepTeal hover:bg-brand-darkNavy text-white font-sans font-medium text-sm transition-colors shadow-xs w-full sm:w-auto"
             >
               <AppIcon icon={WhatsappIcon} size={18} strokeWidth={2} />
               <span>Book on WhatsApp</span>

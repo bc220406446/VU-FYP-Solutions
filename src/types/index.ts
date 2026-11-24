@@ -10,7 +10,22 @@ export type ProjectCategory =
   | "iot-hardware"
   | "cloud-devops";
 
-export type ProjectDifficulty = "beginner" | "intermediate" | "advanced";
+export type ProjectDifficulty = "Easy" | "Medium" | "Hard" | "beginner" | "intermediate" | "advanced";
+
+export type SupervisorBehaviour = "Polite" | "Strict" | "Moody";
+
+export interface ProjectListingItem {
+  id: string;
+  slug: string;
+  title: string;
+  category: string;
+  supervisor: string;
+  session: string;
+  difficulty: "Easy" | "Medium" | "Hard";
+  supervisorBehaviour: "Polite" | "Strict" | "Moody";
+  description?: string;
+  technologies?: string[];
+}
 
 export interface ProjectMetadata {
   id: string;
@@ -26,6 +41,9 @@ export interface ProjectMetadata {
   featured?: boolean;
   publishedAt: string;
   updatedAt?: string;
+  supervisor?: string;
+  session?: string;
+  supervisorBehaviour?: SupervisorBehaviour;
 }
 
 export interface ServiceItem {

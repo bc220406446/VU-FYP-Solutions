@@ -1,15 +1,107 @@
-import { ProjectMetadata } from "@/types";
+import { ProjectListingItem } from "@/types";
 
 /**
- * DeveloperBano - Project Catalog Data Source
- * Foundational data structure for projects. Real projects will be populated here or via MDX / Supabase.
+ * DeveloperBano / VU FYP Solutions - Official Project Catalog Data
  */
-export const projectsData: ProjectMetadata[] = [];
+export const projectsCatalog: ProjectListingItem[] = [
+  {
+    id: "proj-1",
+    slug: "ai-student-productivity-ecosystem-app",
+    title: "AI Student Productivity Ecosystem App",
+    category: "Mobile Application Development",
+    supervisor: "Bilal Bin Umar",
+    session: "Fall2026",
+    difficulty: "Medium",
+    supervisorBehaviour: "Polite",
+    description: "An AI-powered mobile productivity hub designed to automate student study schedules, task reminders, and lecture summarization.",
+    technologies: ["Flutter", "FastAPI", "Python", "SQLite"],
+  },
+  {
+    id: "proj-2",
+    slug: "ai-based-intelligent-child-safety-monitoring",
+    title: "AI-Based Intelligent Child Safety Monitoring and Geofencing-Based Predictive Tracking System",
+    category: "Mobile Application / Location-Based Services / Artificial Intelligence",
+    supervisor: "Shakeel Saeed",
+    session: "Fall2026",
+    difficulty: "Hard",
+    supervisorBehaviour: "Strict",
+    description: "Real-time GPS geofencing, predictive movement tracking, and emergency alert broadcast system for student and child safety monitoring.",
+    technologies: ["React Native", "Node.js", "MongoDB", "Google Maps API"],
+  },
+  {
+    id: "proj-3",
+    slug: "ai-based-medical-diagnosis-system-nlp-ml",
+    title: "AI-Based Medical Diagnosis System using NLP & Machine Learning",
+    category: "Web Development / Natural Language Processing / Machine Learning",
+    supervisor: "Amna Bibi",
+    session: "Fall2026",
+    difficulty: "Hard",
+    supervisorBehaviour: "Polite",
+    description: "Clinical NLP decision support pipeline that analyzes patient symptom descriptions to predict conditions and recommend specialist consultations.",
+    technologies: ["Python", "Flask", "scikit-learn", "React", "PostgreSQL"],
+  },
+  {
+    id: "proj-4",
+    slug: "interactive-web-portal-diabetes-patients-pakistan",
+    title: "An Interactive Web Portal for Keeping Records of Diabetes-Affected Patients in Pakistan",
+    category: "Web Application Development",
+    supervisor: "Mir Salam Khan",
+    session: "Fall2026",
+    difficulty: "Medium",
+    supervisorBehaviour: "Moody",
+    description: "A centralized electronic health records web portal specifically tailored to Pakistani healthcare clinics for tracking glucose levels and diabetic diets.",
+    technologies: ["PHP", "Laravel", "MySQL", "Bootstrap"],
+  },
+  {
+    id: "proj-5",
+    slug: "android-based-smart-electricity-consumption-predictor",
+    title: "Android-Based Smart Electricity Consumption Predictor",
+    category: "Machine Learning",
+    supervisor: "Muhammad Imran Afzal",
+    session: "Fall2026",
+    difficulty: "Medium",
+    supervisorBehaviour: "Strict",
+    description: "Smart household electricity meter reader and time-series bill prediction application leveraging historical tariff and appliance usage logs.",
+    technologies: ["Android Java", "Python", "XGBoost", "Firebase"],
+  },
+  {
+    id: "proj-6",
+    slug: "answer-question-community-aqdesk",
+    title: "Answer Question Community, Learning and Knowledge Platform (AQDesk)",
+    category: "Web Application Development",
+    supervisor: "Abdullah Qamar",
+    session: "Fall2026",
+    difficulty: "Hard",
+    supervisorBehaviour: "Polite",
+    description: "Collaborative academic Q&A platform with reputation metrics, markdown question formatting, tagged search, and moderation workflows.",
+    technologies: ["Django", "Python", "PostgreSQL", "Tailwind CSS"],
+  },
+  {
+    id: "proj-7",
+    slug: "campusease-smart-lost-found-system",
+    title: "CampusEase – Smart Lost & Found System for University Campuses",
+    category: "Web Application Development",
+    supervisor: "Ehsan ul Haq",
+    session: "Fall2026",
+    difficulty: "Medium",
+    supervisorBehaviour: "Polite",
+    description: "Automated campus property recovery platform featuring item image tagging, claimant verification, and administration hand-off tracking.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
+  },
+  {
+    id: "proj-8",
+    slug: "charity-management-system-donation-request",
+    title: "Charity Management System for Donation and Request Handling",
+    category: "Web Application Development",
+    supervisor: "Ammara Rasheed",
+    session: "Fall2026",
+    difficulty: "Easy",
+    supervisorBehaviour: "Moody",
+    description: "Streamlined non-profit portal handling online donations, needy family verifications, transparent relief distribution, and receipt generation.",
+    technologies: ["PHP", "MySQL", "HTML5/CSS3", "JavaScript"],
+  },
+];
 
-export function getProjectBySlug(slug: string): ProjectMetadata | undefined {
-  return projectsData.find((project) => project.slug === slug);
-}
-
-export function getFeaturedProjects(): ProjectMetadata[] {
-  return projectsData.filter((project) => project.featured);
+export function getProjectBySlug(slug: string): ProjectListingItem | undefined {
+  return projectsCatalog.find((project) => project.slug === slug);
 }

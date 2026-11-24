@@ -44,9 +44,8 @@ export function BuildOnYourOwnSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Left Text Column */}
           <div className="lg:col-span-5 space-y-4">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-deepTeal/10 text-brand-deepTeal text-xs font-semibold font-sans">
-              <AppIcon icon={Book02Icon} size={14} strokeWidth={2} />
-              <span>Self-Paced Student Track</span>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 text-brand-deepTeal text-xs font-semibold font-sans">
+              Self-Paced Student Track
             </div>
 
             <h2 className="text-2xl sm:text-3xl font-bold font-heading text-brand-deepInk tracking-tight leading-tight">
@@ -64,7 +63,7 @@ export function BuildOnYourOwnSection() {
             <div className="pt-2">
               <Link
                 href="/blogs"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-brand-deepTeal hover:bg-[#095E63] text-white font-sans font-medium text-sm transition-colors shadow-xs"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-brand-deepTeal hover:bg-brand-darkNavy text-white font-sans font-medium text-sm transition-colors shadow-xs"
               >
                 <span>Read Development Guidelines in Blog</span>
                 <AppIcon icon={ArrowRight01Icon} size={16} strokeWidth={2} />

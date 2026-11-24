@@ -10,7 +10,7 @@ export function TopAnnouncementBar() {
   });
 
   return (
-    <div className="w-full bg-brand-deepInk text-white text-xs sm:text-sm py-2 px-4 border-b border-brand-slate">
+    <div className="w-full bg-brand-darkNavy text-white text-xs sm:text-sm py-2 px-4 border-b border-brand-deepTeal/40">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
         <div className="flex items-center gap-2 text-center sm:text-left justify-center">
           <span className="flex items-center justify-center h-5 w-5 rounded-full bg-brand-deepTeal/40 text-brand-primaryTeal shrink-0">

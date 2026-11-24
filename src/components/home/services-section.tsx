@@ -90,7 +90,7 @@ export function ServicesSection() {
               href={cs519WhatsAppUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-brand-deepTeal hover:bg-[#0A5A5E] text-white font-sans font-medium text-sm transition-colors shadow-sm"
+              className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-brand-deepTeal hover:bg-brand-darkNavy text-white font-sans font-medium text-sm transition-colors shadow-sm"
             >
               <AppIcon icon={WhatsappIcon} size={18} strokeWidth={2} />
               <span>Book CS519 Project</span>
@@ -168,7 +168,7 @@ export function ServicesSection() {
               href={cs619WhatsAppUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-brand-deepTeal hover:bg-[#0A5A5E] text-white font-sans font-medium text-sm transition-colors shadow-sm"
+              className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-brand-deepTeal hover:bg-brand-darkNavy text-white font-sans font-medium text-sm transition-colors shadow-sm"
             >
               <AppIcon icon={WhatsappIcon} size={18} strokeWidth={2} />
               <span>Book CS619 Project</span>

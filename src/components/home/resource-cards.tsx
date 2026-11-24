@@ -33,7 +33,7 @@ export function ResourceCards() {
           <div className="pt-6 mt-4">
             <Link
               href="/supervisor-reviews"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-brand-deepTeal hover:bg-[#0A5A5E] text-white font-sans font-medium text-sm transition-colors shadow-2xs"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-brand-deepTeal hover:bg-brand-darkNavy text-white font-sans font-medium text-sm transition-colors shadow-2xs"
             >
               <span>View Reviews</span>
               <AppIcon icon={ArrowRight01Icon} size={16} strokeWidth={2} />
@@ -62,7 +62,7 @@ export function ResourceCards() {
           <div className="pt-6 mt-4">
             <Link
               href="/helping-material"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-brand-deepTeal hover:bg-[#0A5A5E] text-white font-sans font-medium text-sm transition-colors shadow-2xs"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-brand-deepTeal hover:bg-brand-darkNavy text-white font-sans font-medium text-sm transition-colors shadow-2xs"
             >
               <span>Explore Material</span>
               <AppIcon icon={ArrowRight01Icon} size={16} strokeWidth={2} />

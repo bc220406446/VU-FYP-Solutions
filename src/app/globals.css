@@ -1,45 +1,47 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand Palette from User Uploaded Palette Image (#06141B, #11212D, #253745, #4A5C6A, #9BA8AB, #CCD0CE) */
-  --color-brand-deep-ink: #06141B;
-  --color-brand-dark-navy: #11212D;
-  --color-brand-slate: #253745;
-  --color-brand-slate-text: #4A5C6A;
-  --color-brand-muted-grey: #9BA8AB;
-  --color-brand-light-grey: #CCD0CE;
+  /* Brand Palette from User Request: #05161A, #072E33, #0C7075, #0F969C, #6DA5C0, #294D61 */
+  --color-brand-deep-ink: #05161A;
+  --color-brand-dark-navy: #072E33;
   --color-brand-deep-teal: #0C7075;
   --color-brand-primary-teal: #0F969C;
   --color-brand-soft-blue: #6DA5C0;
-  --color-brand-warm-white: #F5F6F3;
+  --color-brand-slate-teal: #294D61;
+  --color-brand-slate: #294D61;
+  --color-brand-slate-text: #294D61;
+  --color-brand-muted-grey: #6DA5C0;
+  --color-brand-light-grey: #D5E2E4;
+  --color-brand-warm-white: #F7FAFA;
 
   /* CamelCase equivalents */
-  --color-brand-deepInk: #06141B;
-  --color-brand-darkNavy: #11212D;
-  --color-brand-slate: #253745;
-  --color-brand-slateText: #4A5C6A;
-  --color-brand-mutedGrey: #9BA8AB;
-  --color-brand-lightGrey: #CCD0CE;
+  --color-brand-deepInk: #05161A;
+  --color-brand-darkNavy: #072E33;
   --color-brand-deepTeal: #0C7075;
   --color-brand-primaryTeal: #0F969C;
   --color-brand-softBlue: #6DA5C0;
-  --color-brand-warmWhite: #F5F6F3;
+  --color-brand-slateTeal: #294D61;
+  --color-brand-slate: #294D61;
+  --color-brand-slateText: #294D61;
+  --color-brand-mutedGrey: #6DA5C0;
+  --color-brand-lightGrey: #D5E2E4;
+  --color-brand-warmWhite: #F7FAFA;
 
   /* Neutral Tokens */
-  --color-neutral-warm-white: #F5F6F3;
+  --color-neutral-warm-white: #F7FAFA;
   --color-neutral-white: #FFFFFF;
-  --color-neutral-light-grey: #CCD0CE;
-  --color-neutral-muted-grey: #9BA8AB;
-  --color-neutral-slate-text: #4A5C6A;
-  --color-neutral-border: #DCE2E1;
+  --color-neutral-light-grey: #D5E2E4;
+  --color-neutral-muted-grey: #6DA5C0;
+  --color-neutral-slate-text: #294D61;
+  --color-neutral-border: #D5E2E4;
 
-  --color-neutral-warmWhite: #F5F6F3;
-  --color-neutral-slateText: #4A5C6A;
-  --color-neutral-lightGrey: #CCD0CE;
-  --color-neutral-mutedGrey: #9BA8AB;
-  --color-neutral-border: #DCE2E1;
+  --color-neutral-warmWhite: #F7FAFA;
+  --color-neutral-slateText: #294D61;
+  --color-neutral-lightGrey: #D5E2E4;
+  --color-neutral-mutedGrey: #6DA5C0;
+  --color-neutral-border: #D5E2E4;
 
-  /* Accent Amber/Gold */
+  /* Accent Amber/Gold for Badges */
   --color-accent-amber: #D97706;
   --color-accent-amber-light: #FEF3C7;
   --color-accent-amber-text: #B45309;
@@ -50,85 +52,85 @@
   --font-mono: var(--font-jetbrains-mono);
 
   /* Shadows */
-  --shadow-subtle: 0 1px 3px 0 rgba(6, 20, 27, 0.05), 0 1px 2px -1px rgba(6, 20, 27, 0.05);
-  --shadow-card: 0 4px 6px -1px rgba(6, 20, 27, 0.05), 0 2px 4px -2px rgba(6, 20, 27, 0.05);
-  --shadow-elevated: 0 10px 15px -3px rgba(6, 20, 27, 0.07), 0 4px 6px -4px rgba(6, 20, 27, 0.05);
+  --shadow-subtle: 0 1px 3px 0 rgba(5, 22, 26, 0.05), 0 1px 2px -1px rgba(5, 22, 26, 0.05);
+  --shadow-card: 0 4px 6px -1px rgba(5, 22, 26, 0.05), 0 2px 4px -2px rgba(5, 22, 26, 0.05);
+  --shadow-elevated: 0 10px 15px -3px rgba(5, 22, 26, 0.07), 0 4px 6px -4px rgba(5, 22, 26, 0.05);
 }
 
 @layer base {
   :root {
     /* Main Background & Foreground */
-    --background: #F5F6F3;        /* Warm White (#F5F6F3) */
-    --foreground: #4A5C6A;        /* Slate Text (#4A5C6A) */
+    --background: #F7FAFA;        /* Clean Light Tint */
+    --foreground: #294D61;        /* Slate Teal (#294D61) */
 
     /* Cards & Surfaces */
     --card: #FFFFFF;              /* Pure White */
-    --card-foreground: #4A5C6A;
+    --card-foreground: #294D61;
 
     /* Popover & Flyouts */
     --popover: #FFFFFF;
-    --popover-foreground: #4A5C6A;
+    --popover-foreground: #294D61;
 
     /* Primary Brand Action: Deep Teal (#0C7075) */
     --primary: #0C7075;
     --primary-foreground: #FFFFFF;
 
     /* Secondary Action / Surface */
-    --secondary: #E8ECEB;
-    --secondary-foreground: #11212D;
+    --secondary: #E8F1F2;
+    --secondary-foreground: #072E33;
 
-    /* Muted Elements (#9BA8AB / #CCD0CE) */
-    --muted: #E5EBEA;
-    --muted-foreground: #9BA8AB;
+    /* Muted Elements (#6DA5C0 / #D5E2E4) */
+    --muted: #E8F1F2;
+    --muted-foreground: #6DA5C0;
 
-    /* Interactive Accent: Primary Teal (#0F969C) */
+    /* Interactive Accent: Vibrant Teal (#0F969C) */
     --accent: #0F969C;
     --accent-foreground: #FFFFFF;
 
     /* Semantic Feedback */
     --destructive: #C04444;
     --destructive-foreground: #FFFFFF;
-    --success: #237A57;
+    --success: #0C7075;
     --success-foreground: #FFFFFF;
     --warning: #B7791F;
     --warning-foreground: #FFFFFF;
-    --info: #397C9A;
+    --info: #294D61;
     --info-foreground: #FFFFFF;
 
-    /* Borders & Inputs (#CCD0CE / #DCE2E1) */
-    --border: #DCE2E1;
-    --input: #DCE2E1;
-    --ring: #0C7075;
+    /* Borders & Inputs */
+    --border: #D5E2E4;
+    --input: #D5E2E4;
+    --ring: #0F969C;
 
     /* Layout & Geometry */
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: #06141B;        /* Deep Ink (#06141B) */
-    --foreground: #F5F6F3;        /* Warm White */
-    --card: #11212D;              /* Dark Navy (#11212D) */
-    --card-foreground: #F5F6F3;
-    --popover: #11212D;
-    --popover-foreground: #F5F6F3;
-    --primary: #0F969C;           /* Primary Teal on Dark */
-    --primary-foreground: #06141B;
-    --secondary: #253745;         /* Slate (#253745) */
-    --secondary-foreground: #F5F6F3;
-    --muted: #253745;
-    --muted-foreground: #9BA8AB;
+    --background: #05161A;        /* Deepest Midnight Ink (#05161A) */
+    --foreground: #F7FAFA;
+    --card: #072E33;              /* Dark Teal Navy (#072E33) */
+    --card-foreground: #F7FAFA;
+    --popover: #072E33;
+    --popover-foreground: #F7FAFA;
+    --primary: #0F969C;           /* Vibrant Teal on Dark */
+    --primary-foreground: #05161A;
+    --secondary: #294D61;         /* Slate Teal (#294D61) */
+    --secondary-foreground: #F7FAFA;
+    --muted: #294D61;
+    --muted-foreground: #6DA5C0;
     --accent: #0F969C;
-    --accent-foreground: #06141B;
+    --accent-foreground: #05161A;
     --destructive: #C04444;
     --destructive-foreground: #FFFFFF;
-    --success: #237A57;
-    --success-foreground: #FFFFFF;
+    --success: #0F969C;
+    --success-foreground: #05161A;
     --warning: #B7791F;
     --warning-foreground: #FFFFFF;
-    --info: #397C9A;
-    --info-foreground: #FFFFFF;
-    --border: #253745;
-    --input: #253745;
+    --info: #6DA5C0;
+    --info-foreground: #05161A;
+    --border: #294D61;
+    --input: #294D61;
     --ring: #0F969C;
   }
 }
@@ -156,7 +158,7 @@ body {
 /* Heading Hierarchy & Typography System */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-poppins), sans-serif;
-  color: #06141B;
+  color: #05161A;
   letter-spacing: -0.015em;
   font-weight: 600;
   line-height: 1.25;
@@ -168,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 .dark h4,
 .dark h5,
 .dark h6 {
-  color: #F5F6F3;
+  color: #F7FAFA;
 }
 
 /* Monospace Snippets */

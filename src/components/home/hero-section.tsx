@@ -38,7 +38,7 @@ export function HeroSection() {
               href={discussWhatsAppUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-lg bg-brand-deepTeal hover:bg-[#095E63] text-white font-sans font-medium text-sm transition-colors shadow-sm"
+              className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-lg bg-brand-deepTeal hover:bg-brand-darkNavy text-white font-sans font-medium text-sm transition-colors shadow-sm"
             >
               <AppIcon icon={WhatsappIcon} size={20} strokeWidth={2} />
               <span>Discuss Your Project</span>
@@ -48,7 +48,7 @@ export function HeroSection() {
               href="/projects"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-white border border-border text-brand-deepInk hover:bg-neutral-warmWhite hover:border-brand-primaryTeal/40 font-sans font-medium text-sm transition-colors shadow-2xs"
             >
-              <span>View Projects</span>
+              <span>View Projects List</span>
               <AppIcon icon={ArrowRight01Icon} size={16} strokeWidth={2} />
             </Link>
           </div>

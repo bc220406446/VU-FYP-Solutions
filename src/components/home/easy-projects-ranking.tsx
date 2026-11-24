@@ -45,15 +45,15 @@ export function EasyProjectsRanking() {
               Want to Choose an <span className="text-brand-deepTeal">Easy Project?</span>
             </h2>
             <p className="text-sm sm:text-base text-neutral-slateText font-sans leading-relaxed">
-              Check out our Easy Projects Ranking curated for high supervisor approval, manageable tech stacks, and minimal viva stress.
+              Explore our curated list of Virtual University Final Year Projects, organized ranking-wise based on our assessment to help you make an informed decision
             </p>
           </div>
 
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-brand-deepTeal hover:bg-[#095E63] text-white font-sans font-medium text-sm transition-colors shadow-xs shrink-0"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-brand-deepTeal hover:bg-brand-darkNavy text-white font-sans font-medium text-sm transition-colors shadow-xs shrink-0"
           >
-            <span>Explore Easy Projects Ranking</span>
+            <span>Explore Easy Projects</span>
             <AppIcon icon={ArrowRight01Icon} size={16} strokeWidth={2} />
           </Link>
         </div>
