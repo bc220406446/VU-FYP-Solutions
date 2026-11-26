@@ -46,10 +46,16 @@ export interface ProjectMetadata {
   supervisorBehaviour?: SupervisorBehaviour;
 }
 
+export type ServiceCourse = "CS619" | "CS519";
+
 export interface ServiceItem {
   id: string;
   slug: string;
   title: string;
+  course: ServiceCourse;
+  price: string;
+  priceNote?: string;
+  badge?: string;
   description: string;
   features: string[];
   icon: string;

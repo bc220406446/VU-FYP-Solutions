@@ -24,7 +24,7 @@ export function EasyProjectsRanking() {
       button: "View Details",
     },
     {
-      title: "CampusEase – Smart Lost & Found System for University Campuses",
+      title: "CampusEase - Smart Lost & Found System for University Campuses",
       category: "Web Application Development",
       supervisor: "Ehsan Ul Haq",
       button: "View Details",

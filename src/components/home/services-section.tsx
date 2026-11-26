@@ -11,7 +11,15 @@ import {
 import { AppIcon } from "@/components/shared/icon";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
-export function ServicesSection() {
+interface ServicesSectionProps {
+  individualHref?: string;
+  hideHeader?: boolean;
+}
+
+export function ServicesSection({
+  individualHref = "/services",
+  hideHeader = false,
+}: ServicesSectionProps) {
   const cs519WhatsAppUrl = buildWhatsAppUrl({
     projectTitle: "CS519 Complete Project Handling (Rs. 20,000)",
   });
@@ -23,17 +31,19 @@ export function ServicesSection() {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
       {/* Section Header */}
-      <div className="text-center max-w-2xl mx-auto space-y-3 mb-12">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 text-brand-deepTeal text-xs font-semibold font-sans">
-          <span>Unable to Handle Your Project at the moment? We've got you covered.</span>
+      {!hideHeader && (
+        <div className="text-center max-w-2xl mx-auto space-y-3 mb-12">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 text-brand-deepTeal text-xs font-semibold font-sans">
+            <span>Unable to Handle Your Project at the moment? We've got you covered.</span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-brand-deepInk tracking-tight">
+            Get Our <span className="text-brand-deepTeal">Services</span>
+          </h2>
+          <p className="text-sm sm:text-base text-neutral-slateText font-sans">
+            Choose a complete project package or explore individual services as per your need.
+          </p>
         </div>
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-brand-deepInk tracking-tight">
-          Get Our <span className="text-brand-deepTeal">Services</span>
-        </h2>
-        <p className="text-sm sm:text-base text-neutral-slateText font-sans">
-          Choose a complete project package or explore individual services as per your need.
-        </p>
-      </div>
+      )}
 
       {/* Services Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -234,7 +244,7 @@ export function ServicesSection() {
 
           <div className="pt-8 mt-auto">
             <Link
-              href="/services"
+              href={individualHref}
               className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-neutral-warmWhite border border-border text-brand-deepInk hover:bg-white hover:border-brand-primaryTeal/40 font-sans font-medium text-sm transition-colors shadow-2xs"
             >
               <span>View All Services</span>

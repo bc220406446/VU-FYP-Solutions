@@ -79,7 +79,7 @@ export const projectsCatalog: ProjectListingItem[] = [
   {
     id: "proj-7",
     slug: "campusease-smart-lost-found-system",
-    title: "CampusEase – Smart Lost & Found System for University Campuses",
+    title: "CampusEase - Smart Lost & Found System for University Campuses",
     category: "Web Application Development",
     supervisor: "Ehsan ul Haq",
     session: "Fall2026",
