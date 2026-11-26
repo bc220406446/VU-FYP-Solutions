@@ -3,7 +3,7 @@ import Link from "next/link";
 import {
   File01Icon,
   Layers01Icon,
-  SourceCodeIcon,
+  BashIcon,
   ComputerIcon,
   Book02Icon,
   ArrowRight01Icon,
@@ -25,7 +25,7 @@ export function BuildOnYourOwnSection() {
       link: "/blogs",
     },
     {
-      icon: SourceCodeIcon,
+      icon: BashIcon,
       title: "Prototype Development",
       desc: "Learn to set up a working prototype, connect databases, implement essential features, and demonstrate core functionalities for supervisor review.",
       link: "/blogs",
@@ -79,7 +79,7 @@ export function BuildOnYourOwnSection() {
                 className="rounded-xl border border-border bg-white p-5 shadow-2xs hover:border-brand-deepTeal/40 transition-colors flex flex-col justify-between space-y-3"
               >
                 <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-lg bg-brand-deepTeal/10 text-brand-deepTeal flex items-center justify-center shrink-0">
+                  <div className="h-10 w-10 rounded-lg bg-brand-deepTeal text-white flex items-center justify-center shrink-0">
                     <AppIcon icon={topic.icon} size={20} strokeWidth={1.8} />
                   </div>
                   <h3 className="font-heading font-bold text-sm text-brand-deepInk leading-snug">

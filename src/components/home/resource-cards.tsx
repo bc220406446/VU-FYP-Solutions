@@ -17,7 +17,7 @@ export function ResourceCards() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div className="space-y-3 max-w-sm">
               <div className="flex items-center gap-3">
-                <div className="h-10 w-10 rounded-lg bg-brand-deepTeal/10 text-brand-deepTeal flex items-center justify-center shrink-0">
+                <div className="h-10 w-10 rounded-lg bg-brand-deepTeal text-white flex items-center justify-center shrink-0">
                   <AppIcon icon={UserGroupIcon} size={22} strokeWidth={1.8} />
                 </div>
                 <h3 className="text-xl font-bold font-heading text-brand-deepInk">
@@ -46,7 +46,7 @@ export function ResourceCards() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div className="space-y-3 max-w-sm">
               <div className="flex items-center gap-3">
-                <div className="h-10 w-10 rounded-lg bg-brand-deepTeal/10 text-brand-deepTeal flex items-center justify-center shrink-0">
+                <div className="h-10 w-10 rounded-lg bg-brand-deepTeal text-white flex items-center justify-center shrink-0">
                   <AppIcon icon={Book02Icon} size={22} strokeWidth={1.8} />
                 </div>
                 <h3 className="text-xl font-bold font-heading text-brand-deepInk">

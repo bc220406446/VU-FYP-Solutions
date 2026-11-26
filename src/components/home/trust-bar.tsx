@@ -42,7 +42,7 @@ export function TrustBar() {
                 index !== 0 ? "pt-4 sm:pt-0 sm:pl-6" : ""
               }`}
             >
-              <div className="h-11 w-11 rounded-lg bg-brand-deepTeal/10 text-brand-deepTeal flex items-center justify-center shrink-0">
+              <div className="h-11 w-11 rounded-lg bg-brand-deepTeal text-white flex items-center justify-center shrink-0">
                 <AppIcon icon={item.icon} size={22} strokeWidth={1.8} />
               </div>
               <div>

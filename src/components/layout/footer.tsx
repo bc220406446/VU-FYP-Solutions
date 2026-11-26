@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import {
-  Mortarboard02Icon,
+  SourceCodeIcon,
   WhatsappIcon,
   Mail01Icon,
 } from "@hugeicons/core-free-icons";
@@ -21,7 +21,7 @@ export function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="flex items-center gap-2.5">
               <div className="h-9 w-9 rounded-lg bg-brand-deepTeal text-white flex items-center justify-center shadow-sm">
-                <AppIcon icon={Mortarboard02Icon} size={22} strokeWidth={2} />
+                <AppIcon icon={SourceCodeIcon} size={22} strokeWidth={2} />
               </div>
               <span className="font-heading font-bold text-lg text-brand-deepInk tracking-tight">
                 VU FYP <span className="text-brand-deepTeal">Solutions</span>
