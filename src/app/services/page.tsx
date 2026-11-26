@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowRight01Icon } from "@hugeicons/core-free-icons";
 import { AppIcon } from "@/components/shared/icon";
 import { ServicesSection } from "@/components/home/services-section";
+import { SeeOurWorkSection } from "@/components/home/see-our-work";
 import { IndividualServicesSection } from "@/components/services/individual-services-section";
 import { LmsHandlingSection } from "@/components/services/lms-handling-section";
 import { CtaBanner } from "@/components/home/cta-banner";
@@ -25,7 +26,7 @@ export default function ServicesPage() {
     <div className="w-full bg-background min-h-screen pb-8">
       {/* Hero / Page Intro Header */}
       <section className="bg-gradient-to-b from-white to-neutral-warmWhite/60">
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 py-4 sm:py-6 space-y-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 pb-8 space-y-8">
           {/* Breadcrumb Navigation */}
           <nav
             aria-label="Breadcrumb"
@@ -47,9 +48,6 @@ export default function ServicesPage() {
 
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
             <div className="space-y-3 max-w-3xl">
-              <div className="inline-flex items-center gap-1.5 py-1 text-brand-deepTeal text-md font-semibold font-sans">
-                <span>Unable to Handle Your Project at the moment? We&apos;ve got you covered.</span>
-              </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-brand-deepInk tracking-tight">
                 Get Our FYP &amp; Academic{" "}
                 <span className="text-brand-deepTeal">Services</span>
@@ -78,9 +76,17 @@ export default function ServicesPage() {
       </section>
 
       {/* 1. Complete Project Packages Block (Header merged into Hero above) */}
-      <ServicesSection individualHref="#individual-services" hideHeader />
+      <ServicesSection individualHref="#individual-services" hideHeader compactTop />
 
-      {/* 2. Individual Services Products Catalog (All, CS619, CS519 - 9 Activities) */}
+      {/* 2. See Our Work Trust Block */}
+      <SeeOurWorkSection
+        eyebrow="Have Doubts About Our Service?"
+        description="View our work before booking us-explore our recent project developments and implementation quality."
+        ctaHref="/student-projects"
+        ctaLabel="View Our Work & Remarks"
+      />
+
+      {/* 3. Individual Services Products Catalog (All, CS619, CS519 - 9 Activities) */}
       <IndividualServicesSection services={servicesData} />
 
       {/* 3. LMS Handling Section (Half Semester, Full Semester, Individual LMS) */}

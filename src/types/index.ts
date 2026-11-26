@@ -89,6 +89,30 @@ export interface SupervisorReview {
   createdAt: string;
 }
 
+export type WorkDomain = "Web" | "AI/ML" | "Mobile";
+
+export interface StudentProjectWork {
+  id: string;
+  slug: string;
+  title: string;
+  course: ServiceCourse;
+  domain: WorkDomain;
+  categoryLabel: string;
+  image?: string;
+  session: string;
+  liveUrl: string;
+  githubUrl: string;
+}
+
+export interface StudentRemark {
+  id: string;
+  studentName: string;
+  course: ServiceCourse;
+  projectTitle: string;
+  session: string;
+  quote: string;
+}
+
 export type UIState =
   | "idle"
   | "loading"

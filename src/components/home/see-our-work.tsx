@@ -18,42 +18,59 @@ const recentProjects: ProjectItem[] = [
     title: "Sovereign E-Commerce Store",
     category: "Full-Stack Web App",
     image: "/images/projects/sovereign-store.webp",
-    link: "/projects",
+    link: "/student-projects",
   },
   {
     id: "graze-smasher",
     title: "Graze Smasher",
     category: "Machine Learning & NLP",
     image: "/images/projects/graze-smasher.webp",
-    link: "/projects",
+    link: "/student-projects",
   },
   {
     id: "smart-query-management",
     title: "Query Management System",
     category: "Academic Query Portal",
     image: "/images/projects/smart-query-management.webp",
-    link: "/projects",
+    link: "/student-projects",
   },
 ];
 
-export function SeeOurWorkSection() {
+interface SeeOurWorkSectionProps {
+  eyebrow?: string;
+  description?: string;
+  ctaHref?: string;
+  ctaLabel?: string;
+}
+
+export function SeeOurWorkSection({
+  eyebrow,
+  description = "Explore our recent project developments and see the quality of our implementation.",
+  ctaHref = "/student-projects",
+  ctaLabel = "View All Projects",
+}: SeeOurWorkSectionProps = {}) {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         {/* Left Column: Heading, description, and link */}
         <div className="lg:col-span-3 space-y-4 lg:pr-2">
+          {eyebrow && (
+            <p className="text-xs font-semibold font-sans text-brand-deepTeal">
+              {eyebrow}
+            </p>
+          )}
           <h2 className="text-2xl sm:text-3xl font-bold font-heading text-brand-deepInk tracking-tight leading-tight">
             See <span className="text-brand-deepTeal">Our Work</span>
           </h2>
           <p className="text-sm text-neutral-slateText font-sans leading-relaxed">
-            Explore our recent project developments and see the quality of our implementation.
+            {description}
           </p>
           <div className="pt-2">
             <Link
-              href="/projects"
+              href={ctaHref}
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white border border-border text-brand-deepInk hover:bg-neutral-warmWhite hover:border-brand-deepTeal/40 font-sans font-medium text-sm transition-colors shadow-2xs"
             >
-              <span>View All Projects</span>
+              <span>{ctaLabel}</span>
               <AppIcon icon={ArrowRight01Icon} size={16} strokeWidth={2} />
             </Link>
           </div>

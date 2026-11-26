@@ -301,7 +301,7 @@ export function ProjectListClient({ initialProjects }: ProjectListClientProps) {
                             {project.session}
                           </span>
                         ) : (
-                          <span className="text-neutral-mutedGrey">—</span>
+                          <span className="text-neutral-mutedGrey">-</span>
                         )}
                       </td>
 

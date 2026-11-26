@@ -21,6 +21,7 @@ export function Navbar() {
     { label: "Home", href: "/" },
     { label: "Projects", href: "/projects" },
     { label: "Services", href: "/services" },
+    { label: "Our Work", href: "/student-projects" },
     { label: "Supervisor Reviews", href: "/supervisor-reviews" },
     { label: "Helping Material", href: "/helping-material" },
     { label: "Blogs", href: "/blogs" },

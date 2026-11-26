@@ -14,11 +14,13 @@ import { buildWhatsAppUrl } from "@/lib/whatsapp";
 interface ServicesSectionProps {
   individualHref?: string;
   hideHeader?: boolean;
+  compactTop?: boolean;
 }
 
 export function ServicesSection({
   individualHref = "/services",
   hideHeader = false,
+  compactTop = false,
 }: ServicesSectionProps) {
   const cs519WhatsAppUrl = buildWhatsAppUrl({
     projectTitle: "CS519 Complete Project Handling (Rs. 20,000)",
@@ -29,7 +31,11 @@ export function ServicesSection({
   });
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <section
+      className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${
+        compactTop ? "pt-0 pb-12 sm:pb-16" : "py-12 sm:py-16"
+      }`}
+    >
       {/* Section Header */}
       {!hideHeader && (
         <div className="text-center max-w-2xl mx-auto space-y-3 mb-12">
