@@ -40,11 +40,6 @@ export function Footer() {
             </h4>
             <ul className="space-y-2 text-sm font-sans text-neutral-slateText">
               <li>
-                <Link href="/" className="hover:text-brand-deepTeal transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
                 <Link href="/projects" className="hover:text-brand-deepTeal transition-colors">
                   Projects
                 </Link>

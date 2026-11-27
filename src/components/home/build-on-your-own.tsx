@@ -10,31 +10,37 @@ import {
 } from "@hugeicons/core-free-icons";
 import { AppIcon } from "@/components/shared/icon";
 
-export function BuildOnYourOwnSection() {
+interface BuildOnYourOwnSectionProps {
+  hideActions?: boolean;
+}
+
+export function BuildOnYourOwnSection({
+  hideActions = false,
+}: BuildOnYourOwnSectionProps = {}) {
   const guideTopics = [
     {
       icon: File01Icon,
       title: "SRS Guidelines",
       desc: "Learn to define project scope, write functional and non-functional requirements, create use case diagrams and usage scenarios, select a development methodology, and prepare a Gantt chart.",
-      link: "/blogs",
+      link: "/blogs/srs-guidelines",
     },
     {
       icon: Layers01Icon,
       title: "Design Document Guidelines",
       desc: "Learn to design system architecture, create database schemas, ER diagrams, class diagrams, sequence diagrams, UI wireframes and write Test Cases.",
-      link: "/blogs",
+      link: "/blogs/design-document-guidelines",
     },
     {
       icon: BashIcon,
       title: "Prototype Development",
       desc: "Learn to set up a working prototype, connect databases, implement essential features, and demonstrate core functionalities for supervisor review.",
-      link: "/blogs",
+      link: "/blogs/prototype-development",
     },
     {
       icon: ComputerIcon,
       title: "Final Deliverable Development",
       desc: "Learn to complete source code, deploy your application, write documentation, prepare presentation slides, and confidently defend your project in the final viva.",
-      link: "/blogs",
+      link: "/blogs/final-deliverable-development",
     },
   ];
 
@@ -60,15 +66,17 @@ export function BuildOnYourOwnSection() {
               Learn how to format documentation to standard VU rubrics, structure your repositories, and prepare slides that supervisors commend.
             </p>
 
-            <div className="pt-2">
-              <Link
-                href="/blogs"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-brand-deepTeal hover:bg-brand-darkNavy text-white font-sans font-medium text-sm transition-colors shadow-xs"
-              >
-                <span>Read Development Guidelines in Blog</span>
-                <AppIcon icon={ArrowRight01Icon} size={16} strokeWidth={2} />
-              </Link>
-            </div>
+            {!hideActions && (
+              <div className="pt-2">
+                <Link
+                  href="/blogs"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-brand-deepTeal hover:bg-brand-darkNavy text-white font-sans font-medium text-sm transition-colors shadow-xs"
+                >
+                  <span>Read Development Guidelines in Blog</span>
+                  <AppIcon icon={ArrowRight01Icon} size={16} strokeWidth={2} />
+                </Link>
+              </div>
+            )}
           </div>
 
           {/* Right Cards Column: 4 Milestone Guides */}
@@ -91,15 +99,17 @@ export function BuildOnYourOwnSection() {
                   {topic.desc}
                 </p>
 
-                <div className="pt-1">
-                  <Link
-                    href={topic.link}
-                    className="inline-flex items-center gap-1 text-xs font-semibold text-brand-deepTeal hover:underline"
-                  >
-                    <span>Read Guide</span>
-                    <AppIcon icon={ArrowRight01Icon} size={13} strokeWidth={2} />
-                  </Link>
-                </div>
+                {!hideActions && (
+                  <div className="pt-1">
+                    <Link
+                      href={topic.link}
+                      className="inline-flex items-center gap-1 text-xs font-semibold text-brand-deepTeal hover:underline"
+                    >
+                      <span>Read Guide</span>
+                      <AppIcon icon={ArrowRight01Icon} size={13} strokeWidth={2} />
+                    </Link>
+                  </div>
+                )}
               </div>
             ))}
           </div>

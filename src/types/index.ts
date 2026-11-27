@@ -113,6 +113,29 @@ export interface StudentRemark {
   quote: string;
 }
 
+export type MaterialKind = "Pattern" | "Sample";
+
+export interface HelpingMaterialItem {
+  id: string;
+  title: string;
+  course: ServiceCourse;
+  kind: MaterialKind;
+  description: string;
+  pdfPath: string;
+  sourcePath: string;
+  sourceExt: "DOCX" | "DOC" | "PPTX" | "PPT";
+  sizeLabel: string;
+}
+
+export interface LearningResourceItem {
+  id: string;
+  title: string;
+  category: string;
+  description: string;
+  url: string;
+  sourceLabel: string;
+}
+
 export type UIState =
   | "idle"
   | "loading"
