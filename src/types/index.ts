@@ -109,7 +109,6 @@ export interface StudentRemark {
   studentName: string;
   course: ServiceCourse;
   projectTitle: string;
-  session: string;
   quote: string;
 }
 

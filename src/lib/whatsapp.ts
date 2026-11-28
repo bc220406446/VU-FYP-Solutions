@@ -3,7 +3,7 @@
  * Generates formatted WhatsApp click-to-chat URLs with contextual pre-filled messages.
  */
 
-const DEFAULT_PHONE_NUMBER = "923000000000";
+const DEFAULT_PHONE_NUMBER = "923328322488";
 
 interface WhatsAppMessageOptions {
   phoneNumber?: string;

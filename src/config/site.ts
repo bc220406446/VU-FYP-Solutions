@@ -11,13 +11,13 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   ogImage: "/images/general/og-image.jpg",
   links: {
-    whatsapp: "https://wa.me/923000000000", // Placeholder format, configured via lib/whatsapp.ts
+    whatsapp: "https://wa.me/923328322488",
     github: "https://github.com/developerbano",
     youtube: "https://youtube.com/@developerbano",
   },
   contact: {
-    email: "contact@developerbano.com",
-    whatsappDisplay: "+92 300 0000000",
+    email: "muhammadkamranyar@gmail.com",
+    whatsappDisplay: "+92 332 8322488",
   },
   navigation: [
     { title: "Home", href: "/" },

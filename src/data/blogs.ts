@@ -86,7 +86,7 @@ export const documentationBlogTopics: BlogArticle[] = [
     slug: "usage-scenarios",
     title: "How do you write Usage Scenarios for Use Case Diagrams?",
     summary:
-      "In this blog, you will learn how to document complete usage scenario tables—including pre-conditions, main success flows, exception paths, and post-conditions—for every use case.",
+      "In this blog, you will learn how to document complete usage scenario tables-including pre-conditions, main success flows, exception paths, and post-conditions-for every use case.",
     readingTimeMinutes: 4,
     sections: [
       {
@@ -105,7 +105,7 @@ export const documentationBlogTopics: BlogArticle[] = [
     sections: [
       {
         heading: "Selecting & Justifying a Methodology",
-        body: "Most VU projects adopt the VU Process Model (a hybrid of Waterfall and Iterative) because phases—SRS, Design, Prototype, Final—are submitted sequentially with iterative refinement.",
+        body: "Most VU projects adopt the VU Process Model (a hybrid of Waterfall and Iterative) because phases-SRS, Design, Prototype, Final-are submitted sequentially with iterative refinement.",
       },
     ],
   },
@@ -263,7 +263,7 @@ export const documentationBlogTopics: BlogArticle[] = [
     sections: [
       {
         heading: "Standard Test Case Format",
-        body: "Include Test Case ID, Module/Feature, Pre-conditions, Test Steps/Input, Expected Result, Actual Result, and Pass/Fail Status—covering both valid and invalid inputs.",
+        body: "Include Test Case ID, Module/Feature, Pre-conditions, Test Steps/Input, Expected Result, Actual Result, and Pass/Fail Status-covering both valid and invalid inputs.",
       },
     ],
   },
@@ -319,7 +319,7 @@ const milestoneGuides: BlogArticle[] = [
     sections: [
       {
         heading: "1. Core Modules & Database Connectivity",
-        body: "Demonstrate working authentication and 2–3 core CRUD workflows connected to your live database.",
+        body: "Demonstrate working authentication and 2-3 core CRUD workflows connected to your live database.",
       },
     ],
   },

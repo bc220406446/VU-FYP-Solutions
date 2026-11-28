@@ -66,38 +66,34 @@ export const studentWorks: StudentProjectWork[] = [
 export const studentRemarks: StudentRemark[] = [
   {
     id: "remark-1",
-    studentName: "Hamza Tariq",
-    course: "CS619",
-    projectTitle: "Sovereign E-Commerce Store",
-    session: "Spring 2026",
+    studentName: "Jahangeer",
+    course: "CS519",
+    projectTitle: "Student Management Web Application",
     quote:
-      "My SRS and Design Document were approved in the first attempt without major revisions, and the 1-on-1 viva walkthrough made it super easy to explain every module to my supervisor.",
+      "Mera Student Management System ka project aur documentation pehli hi attempt mein approve ho gayi thi. Code bilkul clean tha aur 1-on-1 walkthrough se supervisor ko har module explain karna bohat aasan ho gaya.",
   },
   {
     id: "remark-2",
-    studentName: "Ayesha Siddiqui",
+    studentName: "Kinza Ilyas",
     course: "CS619",
     projectTitle: "Graze Smasher (ML & NLP)",
-    session: "Fall 2025",
     quote:
-      "I was stuck on connecting my Python ML model with the frontend before my prototype deadline. They set everything up remotely on my laptop and prepped me for every viva question.",
+      "Main ne sirf apna Final Deliverable in se banwaya tha. Python ML model aur frontend dono perfectly integrate ho kar mere laptop par setup ho gaye aur final submission time par complete mil gayi.",
   },
   {
     id: "remark-3",
     studentName: "Bilal Ahmed",
     course: "CS619",
     projectTitle: "Smart Query Management System",
-    session: "Spring 2026",
     quote:
-      "Clean code, proper VU-formatted documentation, and very responsive on WhatsApp whenever I needed a quick explanation before my defense.",
+      "Code bohat clean tha aur documentation bhi proper VU pattern ke mutabiq thi. Jab bhi defense se pehle koi cheez samajhni hoti thi, WhatsApp par foran guidance mil jati thi.",
   },
   {
     id: "remark-4",
     studentName: "Sanaullah Khan",
     course: "CS619",
     projectTitle: "Community Skill Exchange",
-    session: "Fall 2025",
     quote:
-      "Booked the Final Deliverable + Viva Prep package. Everything ran smoothly on my local machine and the mock viva session gave me real confidence.",
+      "Final Deliverable aur Viva Prep ka package book kiya tha. Mere laptop par remote setup bilkul smoothly ho gaya aur mock viva session se final defense mein bohat confidence mila.",
   },
 ];

@@ -1,4 +1,5 @@
 import { createServerClient, type CookieOptions } from "@supabase/ssr";
+import { createClient as createSupabaseAdminClient } from "@supabase/supabase-js";
 import { cookies } from "next/headers";
 
 interface CookieToSet {
@@ -53,12 +54,10 @@ export function createAdminClient() {
     );
   }
 
-  return createServerClient(supabaseUrl, serviceRoleKey, {
-    cookies: {
-      getAll() {
-        return [];
-      },
-      setAll() {},
+  return createSupabaseAdminClient(supabaseUrl, serviceRoleKey, {
+    auth: {
+      persistSession: false,
+      autoRefreshToken: false,
     },
   });
 }

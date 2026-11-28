@@ -57,7 +57,7 @@ export default function BlogsPage() {
       {/* Working on Your Project on Your Own? (Blog-specific block) */}
       <BlogBuildIntro />
 
-      {/* FYP Documentation – Blog Topics (List Format) */}
+      {/* FYP Documentation - Blog Topics (List Format) */}
       <section
         id="articles"
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-6"

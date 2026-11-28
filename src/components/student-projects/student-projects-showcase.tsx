@@ -89,7 +89,7 @@ export function StudentProjectsShowcase({
                     alt={project.title}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover object-top"
+                    className="object-fill object-top"
                   />
                   <div className="absolute top-3 left-3 flex items-center gap-2">
                     <span className="px-2.5 py-0.5 rounded text-[11px] font-sans font-semibold bg-brand-deepInk/85 text-white backdrop-blur-xs">
